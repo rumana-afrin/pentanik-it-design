@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container-fluid p-0 m-0">
+                <div class="navbar-container d-flex justify-content-center align-items-center">
+                    <div class="navbar p-0 m-0">
+                        <div class="logo text-light fs-4">
+                            <div class="hem-menu">
+                                <a class="mobile-menu-icon" href="javascript:void(0)" onclick="openNav()"><i
+                                        class="fa-solid fa-bars"></i></a>
+                            </div>
+                            <a href=""><img class="logo-image" src="/pentanik-logo.png" alt="" width="150" height="60"></a>
+                        </div>
+                        <div class="menus p-0 m-0">
+                            <!--start category menu -->
+                            <ul class="category-menu m-0 p-0">
+                                <li class="menus-item">
+                                    <a href="about-us.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="">Team</a>
+                                </li>
+                                <li>
+                                    <a href="">Blog</a>
+                                </li>
+                                <li class="dropdown">
+                                    <div class="d-flex dropdownbtn">
+                                        <a href="javascript:void(0)">Service</a><i
+                                            class="fa-solid fa-chevron-down dropdown-icon"></i>
+                                    </div>
+                                    <ul class="drop-content p-0 m-0">
+                                        <li>
+                                            <a href="">Digital Marketing</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Social Media Marketing</a>
+                                        </li>
+                                        <li>
+                                            <a href="">SEO</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Web Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="">UI/UX Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Ecommerce Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Business Development</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!--end category menu -->
+                            <!--start page menu -->
+                            <ul class="page-menus p-0 ms-1">
+                                <!-- <li class="menus-item">
+                                    <a href="">link1</a>
+                                </li>
+                                <li>
+                                    <a href="">link2</a>
+                                </li>
+                                <li>
+                                    <a href="">link3</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <!--start page menu -->
+                        <div class="right-nav">
+                            <a href="tel:01868366628"><i class="fa-solid fa-phone-volume pe-2"></i>01256978787</a>
+                            <i class="fa-solid fa-magnifying-glass header-icon" onclick="searchbar()"></i>
+                            <div class="search-bar">
+                                <input class="search" type="search" placeholder="search...">
+                            </div>
+                        </div>
+
+                        <!--start mobile menu -->
+
+                        <div id="mySidebar" class="sidebar">
+                            <div class="mlogo">
+                                <img class="mlogo-image ms-5" src="/pentanik-logo.png" alt="" width="150" height="60">
+                            </div>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <li class="navbar-item">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">PortFolio</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Team</a>
+                            </li>
+                            <li class="dropdown-container">
+                                <a href="#" class="dropdown-togglee d-flex justify-content-between align-items-center">
+                                    <span class="">Services</span>
+                                    <i class="fa-solid fa-chevron-down mobile-drop-icon"></i>
+                                </a>
+                                <ul class="dropdown-menus p-0 m-0">
+                                    <li class="mdropdown-item">
+                                        <a class="nav-links dropdown-link" href="">Digital Marketing</a>
+                                    </li>
+                                    <li class="mdropdown-item">
+                                        <a class="nav-links dropdown-link" href="">Social Media Marketing</a>
+                                    </li>
+                                    <li class="mdropdown-item">
+                                        <a class="nav-links dropdown-link" href="">SEO</a>
+                                    </li>
+                                    <li class="mdropdown-item">
+                                        <a class="nav-links dropdown-link" href="">Web Design</a>
+                                    </li>
+                                    <li class="mdropdown-item">
+                                        <a class="nav-links dropdown-link" href="">UI/UX Design</a>
+                                    </li>
+                                    <li class="mdropdown-item">
+                                        <a class="nav-links dropdown-link" href="">Ecommerce Design</a>
+                                    </li>
+                                    <li class="mdropdown-item">
+                                        <a class="nav-links dropdown-link" href="">Business Development</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Blog</a>
+                            </li>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+       
+    </header>
+
+    <main>
+         <!-- start hero section -->
+        <section>
+            <div class="container hero-container">
+                <div class="hero-section d-flex justify-content-between align-items-center">
+                    <div class="hero-image d-flex justify-content-between align-items-center">
+                        <div class="main-image">
+                            <picture>
+                                <source media="(max-width: 992px)" srcset="/img/hero-2.jpg" width="350" height="450">
+                                <source media="(max-width: 1200px)" srcset="/img/hero-2.jpg" width="500" height="450">
+                                <img src="/img/hero-2.jpg" alt="Hero Image" width="650" height="450">
+                            </picture>
+                        </div>
+                        <!-- <div class="hero-shape">
+                            <img src="/img/final-shap.png" alt="" width="200" height="450">
+                        </div> -->
+                    </div>
+                    <div class="hero-info">
+                        <div class="ps-5 info-conatainer">
+                            <div class="heroinfo">
+                                <p class="wave-text">
+                                    <span>SMART</span><span>&nbsp SOLUTION</span>
+                                </p>
+                            </div>
+                            <div class="heroinfo">
+                                <h1 class="hero-title">Building the tech Future One Byte at a Time</h1>
+                            </div>
+                            <div class="heroinfo info-subtitle">
+                                <p>We have been operating for over a decade, providing top-notch services to our clients
+                                    and building</p>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center heroinfo">
+                                <!-- <div> -->
+                                <div class="readmore-button">
+                                    <button class="btn">Read More</button>
+                                </div>
+                                <div class="hero-icon d-flex justify-content-center align-items-center ms-4">
+                                    <div class="hero-icon2 d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                </div>
+                                <div class="ms-4 hero-help">
+                                    <p class="p-0 m-0"> - Need Help ?</p>
+                                    <p class="p-0 m-0"><a href="#" class="text-dark">0125469387</a></p>
+                                </div>
+                                <!-- </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end hero section -->
+        <!-- start service section -->
+
+        <section class="service-section p-0 mt-3">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="w-100 d-flex flex-column justify-content-center align-items-center">
+                    <div class="service-header d-flex justify-content-center align-items-center">
+                        <div class="service-icon d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-pen-clip"></i>
+                        </div>
+                    </div>
+                    <div class="service-title d-flex justify-content-center align-items-center mt-3">
+                        <h2>Pentanik IT - Digital Services</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2 d-flex justify-content-center">
+                <div class="service-container">
+                    <div class="row d-flex justify-content-center m-0">
+
+                        <div
+                            class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center service-card">
+                            <div class="card-left-side">
+                                <img src="/img/Screenshot_1.png" alt="" width="74" height="67">
+                            </div>
+                            <div class="card-right-side">
+                                <h5><a href="#">Digital Marketing</a></h5>
+                                <p>The ultimate goal of digital marketing is to turn a visitor or a potential customer
+                                    towards a confirmed purchase</p>
+                                <ul class="p-3" class="p-3">
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center service-card">
+                            <div class="card-left-side">
+                                <img src="/img/Screenshot_1.png" alt="" width="74" height="67">
+                            </div>
+                            <div class="card-right-side">
+                                <h5><a href="#">Digital Marketing</a></h5>
+                                <p>The ultimate goal of digital marketing is to turn a visitor or a potential customer
+                                    towards a confirmed purchase</p>
+                                <ul class="p-3">
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center service-card">
+                            <div class="card-left-side">
+                                <img src="/img/Screenshot_1.png" alt="" width="74" height="67">
+                            </div>
+                            <div class="card-right-side">
+                                <h5><a href="#">Digital Marketing</a></h5>
+                                <p>The ultimate goal of digital marketing is to turn a visitor or a potential customer
+                                    towards a confirmed purchase</p>
+                                <ul class="p-3">
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center service-card">
+                            <div class="card-left-side">
+                                <img src="/img/Screenshot_1.png" alt="" width="74" height="67">
+                            </div>
+                            <div class="card-right-side">
+                                <h5><a href="#">Digital Marketing</a></h5>
+                                <p>The ultimate goal of digital marketing is to turn a visitor or a potential customer
+                                    towards a confirmed purchase</p>
+                                <ul class="p-3">
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center service-card">
+                            <div class="card-left-side">
+                                <img src="/img/Screenshot_1.png" alt="" width="74" height="67">
+                            </div>
+                            <div class="card-right-side">
+                                <h5><a href="#">Digital Marketing</a></h5>
+                                <p>The ultimate goal of digital marketing is to turn a visitor or a potential customer
+                                    towards a confirmed purchase</p>
+                                <ul class="p-3">
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center service-card">
+                            <div class="card-left-side">
+                                <img src="/img/Screenshot_1.png" alt="" width="74" height="67">
+                            </div>
+                            <div class="card-right-side">
+                                <h5><a href="#">Digital Marketing</a></h5>
+                                <p>The ultimate goal of digital marketing is to turn a visitor or a potential customer
+                                    towards a confirmed purchase</p>
+                                <ul class="p-3">
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                    <li>Marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end service section -->
+
+        <!-- start contact section -->
+        <section class="contact-section mt-3">
+            <div class="devices-contact-section d-flex justify-content-center">
+                <div class="contact-banner w-50">
+                    <img src="/img/contact-banner-5.png" alt="">
+                </div>
+                <div class="contact-info w-50 d-flex justify-content-center align-items-center p-3">
+                    <div class="devices-contact-info">
+                        <div class="text-center">
+                            <h3>Hire/Contact Us</h3>
+                        </div>
+                        <div class="text-center mt-3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti.Lorem ipsum dolor sit
+                                amet, consectetur adipisicing elit. Deleniti.Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Deleniti.</p>
+                        </div>
+                        <div class="text-center d-flex justify-content-center align-items-center">
+                            <p class="contact-number">+01868366628</p>
+                        </div>
+                        <div class="contact-icon text-center d-flex justify-content-center align-items-center">
+                            <img src="/img/icon/icons8-facebook.svg" alt="">
+                            <img src="/img/icon/icons8-gmail.svg" alt="">
+                            <img src="/img/icon/icons8-instagram.svg" alt="">
+                            <img src="/img/icon/icons8-linkedin.svg" alt="">
+                            <img src="/img/icon/icons8-pinterest.svg" alt="">
+                            <img src="/img/icon/icons8-telegram.svg" alt="">
+                            <img src="/img/icon/icons8-tiktok (1).svg" alt="">
+                            <img src="/img/icon/icons8-twitter.svg" alt="">
+                            <img src="/img/icon/icons8-whatsapp.svg" alt="">
+                            <img src="/img/icon/icons8-youtube.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end contact section -->
+<!--  -->
+        <!-- start contact section -->
+        <section class="work-section mt-3">
+            <div class="work-header">
+                <div class="work-top-header d-flex justify-content-center align-items-center">
+                    <div class="woek-line-shap"></div>
+                    <h4 class="p-3">WORK PROCESS</h4>
+                    <div class="woek-line-shap"></div>
+                </div>
+                <div class="title d-flex justify-content-center align-items-center">
+                    <h1>How We Do?</h1>
+                </div>
+            </div>
+            <!-- <div class="working-way"> -->
+            <div class="working-way p-0 m-0 d-flex justify-content-center">
+                <div class="work-content-section d-flex justify-content-center">
+                    <div class="bg-light work-way p-3">
+                        <div class="work-card-top d-flex justify-content-between align-items-center ps-2 pe-2">
+                            <div class="work-number">
+                                <h1>01</h1>
+                            </div>
+                            <div class="work-shap">
+                                <img src="/img/pattern-1.png" alt="" width="100" height="100">
+                            </div>
+                        </div>
+                        <div class="work-card-body">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img src="/img/icon/icons8-idea-64.png" alt="" width="80" height="80">
+                                <h4 class="ms-3">Generate Ideas</h4>
+                            </div>
+                            <div class="work-card-content mt-3">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, saepe.Lorem,
+                                    ipsum dolor sit amet consectetur adipisicing elit. Eligendi, saepe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light work-way p-3">
+                        <div class="work-card-top d-flex justify-content-between align-items-center ps-2 pe-2">
+                            <div class="work-number">
+                                <h1>01</h1>
+                            </div>
+                            <div class="work-shap">
+                                <img src="/img/pattern-1.png" alt="" width="100" height="100">
+                            </div>
+                        </div>
+                        <div class="work-card-body">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img src="/img/icon/market-research.svg" alt="" width="80" height="80">
+                                <h4 class="ms-3">Generate Ideas</h4>
+                            </div>
+                            <div class="work-card-content mt-3">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, saepe.Lorem,
+                                    ipsum dolor sit amet consectetur adipisicing elit. Eligendi, saepe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light work-way p-3">
+                        <div class="work-card-top d-flex justify-content-between align-items-center ps-2 pe-2">
+                            <div class="work-number">
+                                <h1>01</h1>
+                            </div>
+                            <div class="work-shap">
+                                <img src="/img/pattern-1.png" alt="" width="100" height="100">
+                            </div>
+                        </div>
+                        <div class="work-card-body">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img src="/img/icon/research.svg" alt="" width="80" height="80">
+                                <h4 class="ms-3">Generate Ideas</h4>
+                            </div>
+                            <div class="work-card-content mt-3">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, saepe.Lorem,
+                                    ipsum dolor sit amet consectetur adipisicing elit. Eligendi, saepe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- </div> -->
+        </section>
+        <!-- end contact section -->
+    </main>
+    <footer>
+        <div class="footer d-flex justify-content-center align-items-center">
+            <div class="footer-logo">
+                <div class="footerlogo">
+                    <img src="/footer-logo.png" alt="">
+                </div>
+            </div>
+            <div class="footer-menu">
+                <ul class="d-flex justify-content-center align-items-center list-unstyled flex-wrap menu-item m-0">
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="">Privacy</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="">Terms of use</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="">Legal disclosure</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="">Copyright</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="">FAQ</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="">Team Member</a></li>
+                </ul>
+            </div>
+            <div class="footer-office-address">
+                <div class="offce-address text-light text-end">
+                    <p class="p-0 m-0"><span>Corporate Office:</span> 46 West Shewrapara, Mirpur, Dhaka-1216</p>
+                    <p class="p-0 m-0"><span>Email:</span>info@pentanikIt.com</p>
+                    <p class="p-0 m-0"><span>Phone:</span>+880125369000</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-footer">
+            <div class="copyright text-center">
+                <p class="p-0 m-0 fw-bold fs-6">Copyright © 2025 The Brain. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js" defer></script>
+    <script>
+        function searchbar() {
+            const el = document.querySelector('.search-bar');
+            el.classList.toggle('active');
+        }
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.querySelector("navbar").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.querySelector("navbar").style.marginLeft = "0";
+        }
+
+
+        const toggleDropdown = (dropdown, menu, isOpen) => {
+            dropdown.classList.toggle("open", isOpen);
+            if (isOpen) {
+                // Set to scrollHeight to trigger transition
+                menu.style.height = `${menu.scrollHeight}px`;
+            } else {
+                // Set to 0 to collapse with transition
+                menu.style.height = "0px";
+            }
+        };
+
+        document.querySelectorAll('.dropdown-togglee').forEach(dropdownToggle => {
+            dropdownToggle.addEventListener("click", e => {
+                e.preventDefault();
+
+                const dropdown = e.target.closest(".dropdown-container");
+                const menu = dropdown.querySelector(".dropdown-menus");
+                const isOpen = dropdown.classList.contains("open")
+
+                toggleDropdown(dropdown, menu, !isOpen)
+            })
+        })
+    </script>
+</body>
+
+</html>
