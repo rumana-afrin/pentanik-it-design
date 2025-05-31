@@ -93,10 +93,10 @@
                             <div class="search-bar">
                                 <input class="search" type="search" placeholder="search...">
                             </div>
-                               <div class="ms-3">
+                            <div class="ms-3">
                                 <a class="text-decoration-none text-light" href="">
                                     <i class="fa-solid fa-user"></i>&nbsp login</a>
-                                </div>
+                            </div>
                         </div>
 
                         <!--start mobile menu -->
@@ -412,7 +412,9 @@
                                         <h4 class="ms-3">Strategy Session</h4>
                                     </div>
                                     <div class="work-card-content mt-3">
-                                        <p>We begin by understanding your business goals, target audience, competitors, and pain points. Then we develop a tailored digital strategy to match your unique needs.</p>
+                                        <p>We begin by understanding your business goals, target audience, competitors,
+                                            and pain points. Then we develop a tailored digital strategy to match your
+                                            unique needs.</p>
                                     </div>
                                 </div>
                             </div>
@@ -436,7 +438,9 @@
                                     </div>
                                     <div class="work-card-content mt-3">
                                         <p>
-                                            Whether it’s your website, ad account, or current content — we perform a full audit. This includes keyword research, market trends, audience behavior, and performance gaps.
+                                            Whether it’s your website, ad account, or current content — we perform a
+                                            full audit. This includes keyword research, market trends, audience
+                                            behavior, and performance gaps.
                                         </p>
                                     </div>
                                 </div>
@@ -461,7 +465,9 @@
                                     </div>
                                     <div class="work-card-content mt-3">
                                         <p>
-                                            From SEO plans and ad funnels to video scripts and creatives — we prepare everything with conversion in mind. Every word, image, and dollar is used with purpose.
+                                            From SEO plans and ad funnels to video scripts and creatives — we prepare
+                                            everything with conversion in mind. Every word, image, and dollar is used
+                                            with purpose.
                                         </p>
                                     </div>
                                 </div>
@@ -485,7 +491,9 @@
                                     </div>
                                     <div class="work-card-content mt-3">
                                         <p>
-                                            We execute your campaigns across the chosen platforms. Whether it’s a Google PPC ad or Facebook video ad, we monitor performance in real-time and optimize continuously.
+                                            We execute your campaigns across the chosen platforms. Whether it’s a Google
+                                            PPC ad or Facebook video ad, we monitor performance in real-time and
+                                            optimize continuously.
                                         </p>
                                     </div>
                                 </div>
@@ -508,7 +516,9 @@
                                         <h4 class="ms-3">Tracking & Reporting</h4>
                                     </div>
                                     <div class="work-card-content mt-3">
-                                        <p>We use Conversion API and advanced tracking tools to measure the real results that matter — leads, sales, and growth. You’ll get regular, easy-to-understand reports.
+                                        <p>We use Conversion API and advanced tracking tools to measure the real results
+                                            that matter — leads, sales, and growth. You’ll get regular,
+                                            easy-to-understand reports.
                                         </p>
                                     </div>
                                 </div>
@@ -532,7 +542,8 @@
                                     </div>
                                     <div class="work-card-content mt-3">
                                         <p>
-                                            Marketing doesn’t stop at launch. We refine, retarget, and scale your campaigns based on performance data to achieve long-term business growth.
+                                            Marketing doesn’t stop at launch. We refine, retarget, and scale your
+                                            campaigns based on performance data to achieve long-term business growth.
                                         </p>
                                     </div>
                                 </div>
@@ -549,7 +560,7 @@
         </section>
         <!-- end contact section -->
     </main>
-    
+
     <!-- start footer -->
     <footer>
         <div class="footer d-flex justify-content-center align-items-center">
@@ -560,12 +571,18 @@
             </div>
             <div class="footer-menu">
                 <ul class="d-flex justify-content-center align-items-center list-unstyled flex-wrap menu-item m-0">
-                    <li class="p-2"><a class="text-decoration-underline text-light" href="aditional-page.html">Privacy</a></li>
-                    <li class="p-2"><a class="text-decoration-underline text-light" href="aditional-page.html">Terms of use</a></li>
-                    <li class="p-2"><a class="text-decoration-underline text-light" href="aditional-page.html">Legal disclosure</a></li>
-                    <li class="p-2"><a class="text-decoration-underline text-light" href="aditional-page.html">Copyright</a></li>
-                    <li class="p-2"><a class="text-decoration-underline text-light" href="aditional-page.html">FAQ</a></li>
-                    <li class="p-2"><a class="text-decoration-underline text-light" href="team.html">Team Member</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light"
+                            href="aditional-page.html">Privacy</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="aditional-page.html">Terms of
+                            use</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="aditional-page.html">Legal
+                            disclosure</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light"
+                            href="aditional-page.html">Copyright</a></li>
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="aditional-page.html">FAQ</a>
+                    </li>
+                    <li class="p-2"><a class="text-decoration-underline text-light" href="team.html">Team Member</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-office-address">
@@ -587,6 +604,10 @@
         </div>
     </footer>
     <!-- end footer -->
+     
+     <!-- start back to top -->
+    <button id="backToTopBtn" title="Go to top">↑</button>
+     <!-- end back to top -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js" defer></script>
@@ -628,7 +649,28 @@
                 toggleDropdown(dropdown, menu, !isOpen)
             })
         })
+
+        //back top button
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        // Show button after scrolling down 100px
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to top on button click
+        backToTopBtn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+
     </script>
+
+
 </body>
 
 </html>

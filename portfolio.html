@@ -399,6 +399,11 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_tabulators -->
     </footer>
     <!-- end footer -->
 
+        <!-- start back to top -->
+    <button id="backToTopBtn" title="Go to top">↑</button>
+     <!-- end back to top -->
+ 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js" defer></script>
     <script>
@@ -448,6 +453,24 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_tabulators -->
             }
             document.getElementById(successName).style.display = "block";
         }
+
+        //back top button
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        // Show button after scrolling down 100px
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to top on button click
+        backToTopBtn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
     </script>
 </body>
 
