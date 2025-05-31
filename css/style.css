@@ -12,6 +12,7 @@ body {
 /* start category menu */
 .navbar-container {
     background-color: rgb(27, 27, 27);
+    /* padding: 10px; */
 }
 
 .navbar {
@@ -316,7 +317,10 @@ body {
 .copyright{
     padding: 30px;
 }
-
+.com-name{
+    color: rgb(204, 6, 6);
+    font-weight: 600;
+}
 @media only screen and (max-width:1100px) {
     .footer-menu {
         padding: 19px;
